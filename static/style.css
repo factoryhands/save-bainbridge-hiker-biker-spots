@@ -1,0 +1,131 @@
+html, body {
+  height: auto;
+  width: 100%;
+  overflow-x: hidden; 
+}
+
+body {
+  background: #1c2615;
+  overflow-y: auto;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 0;
+  /* Remove white spaces around the divs */
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* bike animation */
+@keyframes bikeMotion {
+      from {
+        transform: translateX(-100%);
+      }
+      to {
+        transform: translateX(100%);
+      }
+    }
+    .bike {
+      animation: bikeMotion 5s linear infinite;
+    }
+
+h1 {
+  color: white;
+  grid-column: 2 / span 10;
+  font-family: Baskerville, serif;
+  font-weight: 700;
+  font-size: 5em;
+  text-align: center;
+  margin-bottom: 10px;
+  /* Remove large space between h1 and h2 */
+  line-height: .9;
+  text-align: center;
+}
+
+h2 {
+  color: white;
+  grid-column: 1 / span 12;
+  font-family: Baskerville, serif;
+  text-align: center;
+  font-size: 2em;
+  border-bottom: 1px solid white;
+  font-weight: 100;
+  padding-bottom: 20px;
+  margin-top: 0px;
+  margin-bottom: 30px;
+  /* Add a 20px margin between h2 and the line */
+}
+
+p {
+  color: white;
+  grid-column: 1 / span 12;
+  font-family: Inter, sans-serif;
+  line-height: 1.6;
+}
+
+.grid-item {
+  background-color: #1c2615;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.grid-item input,
+.grid-item textarea {
+  width: 100%;
+  /* Make inputs and textarea the same width as the container */
+  height: 45px;
+  /* Set email input height to 45px */
+}
+
+.grid-item button {
+  width: 100%;
+  /* Make button the same width as the container */
+  height: 50px;
+  /* Set button height to 50px */
+  background-color: yellow;
+  /* Set button background color to yellow */
+  border: none;
+  /* Remove button border */
+  font-family: Baskerville, serif;
+  /* Set button text font to Baskerville */
+  font-size: 2rem;
+  /* Set button text font size to 2rem */
+}
+
+label {
+  font-family: Inter, sans-serif;
+  color: white;
+}
+
+.name-input {
+  margin-bottom: 24px;
+}
+
+textarea.email-body  {
+  font-family: Inter, sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  height: 200px;
+}
+
+input {
+  font-family: Inter, sans-serif;
+  font-size: 1rem;
+}
+
+@media only screen and (max-width: 667px) {
+  body {
+    font-size: 1em;
+  }
+  
+  h1 {
+    font-size: 3em;
+  }
+  
+  h2 {
+    font-size: 1.5em;
+  }
+}
+

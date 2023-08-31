@@ -79,6 +79,9 @@ p {
   /* Set email input height to 45px */
 }
 
+/* -------- send email button -------- */
+
+/* default state */
 .grid-item button {
   width: 100%;
   /* Make button the same width as the container */
@@ -93,6 +96,26 @@ p {
   font-size: 2rem;
   /* Set button text font size to 2rem */
 }
+
+/* hover state */
+.grid-item button:hover {
+  background-color: #b9b918;
+  cursor: pointer;
+}
+
+/* Active State */
+.grid-item button:active {
+  background-color: #b9b918;
+  cursor: pointer;
+}
+
+/* Focus State */
+.grid-item button:active {
+  background-color: #b9b918;
+  outline: 2px solid #4f4f1c;
+}
+
+/* ---------------- */
 
 label {
   font-family: Inter, sans-serif;

@@ -7,6 +7,10 @@ html, body {
 body {
   background: #1c2615;
   overflow-y: auto;
+  color: white;
+  grid-column: 1 / span 12;
+  font-family: Inter, sans-serif;
+  line-height: 1.6;
 }
 
 .container {
@@ -137,6 +141,24 @@ input {
   font-family: Inter, sans-serif;
   font-size: 1rem;
 }
+
+/* generate new letter link */
+a.generate-new-letter {
+  margin-top: 8px;
+}
+
+a.generate-new-letter {
+  color: white;
+  margin-top: 8px;
+}
+
+a.generate-new-letter:hover {
+  color: white;
+  text-decoration: none;
+}
+/* ---------------- */
+
+/* media queries */
 
 @media only screen and (max-width: 667px) {
   body {

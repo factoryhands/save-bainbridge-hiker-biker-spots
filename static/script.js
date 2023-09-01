@@ -30,11 +30,11 @@ function typeWriter(elementId, txt, i) {
   }
 }
 
-document.getElementById("newletterbtn").addEventListener("click", function() {
-  fetch('/generate', { method: 'POST' })
+function fetchNewLetter() {
+  fetch('/generate')
     .then(response => response.json())
     .then(data => {
       document.getElementById("email-body").value = '';
-      typeWriter("email-body", data['text'], 0);
-    })
-});
+      typeWriter("email-body", data.text, 0);
+    });
+}

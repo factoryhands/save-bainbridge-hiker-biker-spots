@@ -15,19 +15,6 @@
   <div class="container">
     <h1>SAVE BIKE CAMPING</h1>
     <h2>at FAY BAINBRIDGE PARK</h2>
-
-    <!-- Bike animation -->
-    <svg class="bike" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="50" height="50" style="position: absolute; bottom: 0; left: 0;">
-  <circle fill="white" stroke="white" stroke-width="2" stroke-miterlimit="10" cx="20" cy="50" r="12"/>  <!--back tire-->
-  <circle fill="white" stroke="white" stroke-width="2" stroke-miterlimit="10" cx="50" cy="50" r="12"/>  <!--front tire-->
-  <path fill="none" stroke="white" stroke-width="2" stroke-miterlimit="10" d="
-    M20,50c0,0,10-20,30-20S70,60,70,60"/>   <!--frame-->
-  <polyline fill="none" stroke="white" stroke-width="2" stroke-miterlimit="10" points="
-    20,50 5,50 5,35 20,35 20,50"/>   <!--pedal-->
-  <line fill="none" stroke="white" stroke-width="2" stroke-miterlimit="10" x1="20" y1="35" x2="28" y2="28"/>   <!--seat post-->
-  <line fill="none" stroke="white" stroke-width="2" stroke-miterlimit="10" x1="50" y1="30" x2="65" y2="15"/>   <!--handlebar-->
-  <line fill="none" stroke="white" stroke-width="2" stroke-miterlimit="10" x1="50" y1="30" x2="28" y2="28"/>   <!--upper frame-->
-</svg>
     
     <p>Sometime before the summer camping season of 2023 Fay Bainbridge Park quietly reclassified their hiker/biker and
       kayaker campsites as non-reservable sites open to motorists. This is a huge blow to the cycling and kayaking
@@ -41,9 +28,9 @@
     
     <div class="grid-item" style="grid-column: span 12;">
       <!-- Email body textarea -->
-      <textarea id="email-body" class="email-body">Loading...</textarea>
+      <textarea id="email-body" class="email-body"></textarea>
 
-      <p><a class="generate-new-letter">Give me a new letter</a></p>
+      <p><a class="generate-new-letter" href="javascript:fetchNewLetter()">Give me a new letter</a></p>
       
       <!-- User name input -->
       <div class="grid-item" style="grid-column: span 12;">
@@ -64,4 +51,4 @@
 
 </body>
 
-</html><link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</html>

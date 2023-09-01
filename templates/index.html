@@ -1,55 +1,74 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Save Biking Camping @ Fay Bainbridge</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+  </head>
 
-  <title>Save Biking Camping @ Fay Bainbridge</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-</head>
+  <body>
+    <div class="container">
+      <h1>SAVE BIKE CAMPING</h1>
+      <h2>at FAY BAINBRIDGE PARK</h2>
 
-<body>
-  <div class="container">
-    <h1>SAVE BIKE CAMPING</h1>
-    <h2>at FAY BAINBRIDGE PARK</h2>
-    
-    <p>Sometime before the summer camping season of 2023 Fay Bainbridge Park quietly reclassified their hiker/biker and
-      kayaker campsites as non-reservable sites open to motorists. This is a huge blow to the cycling and kayaking
-      community in Seattlea and the surrounding area. Gone are the days where you could be guaranteed a spot at Fay
-      Bainbridge for arriving under your own steam. Let's save ths spots!</p>
+      <p>
+        Sometime before the summer camping season of 2023 Fay Bainbridge Park
+        quietly reclassified their hiker/biker and kayaker campsites as
+        non-reservable sites open to motorists. This is a huge blow to the
+        cycling and kayaking community in Seattlea and the surrounding area.
+        Gone are the days where you could be guaranteed a spot at Fay Bainbridge
+        for arriving under your own steam. Let's save ths spots!
+      </p>
 
-    <p>Lost for words? So was I! I've gone a head and built a little tool that assembles the right words for you. If you
-      don't like this version you can edit or choose to write your own. Let's get those emails out!</p>
+      <p>
+        Lost for words? So was I! I've gone a head and built a little tool that
+        assembles the right words for you. If you don't like this version you
+        can edit or choose to write your own. Let's get those emails out!
+      </p>
 
-    <p class="banman-greeting">Dear Mr. Banman</p>
-    
-    <div class="grid-item" style="grid-column: span 12;">
-      <!-- Email body textarea -->
-      <textarea id="email-body" class="email-body"></textarea>
+      <p class="banman-greeting">Dear Mr. Banman</p>
 
-      <a class="generate-new-letter" href="javascript:fetchNewLetter()"><i class="fas fa-sync"></i>Give me a new letter</a>
-      
-      <!-- User name input -->
-      <div class="grid-item" style="grid-column: span 12;">
-        <div class="name-input">
-          <label for="email-input">Yours sincerely,</label>
-          <input type="text" id="name-input" placeholder="Name">
+      <div class="grid-item" style="grid-column: span 12">
+        <!-- Email body textarea -->
+        <textarea id="email-body" class="email-body"></textarea>
+
+        <a class="generate-new-letter" href="javascript:fetchNewLetter()"
+          ><i class="fas fa-sync"></i>Give me a new letter</a
+        >
+
+        <!-- User name input -->
+        <div class="grid-item" style="grid-column: span 12">
+          <div class="name-input">
+            <label for="email-input">Yours sincerely,</label>
+            <input type="text" id="name-input" placeholder="Name" />
+          </div>
         </div>
+      </div>
+
+      <!-- Send email button -->
+      <div class="grid-item" style="grid-column: span 12">
+        <button onclick="sendEmail()" class="send-email-btn">
+          Send the email and save the spots!
+        </button>
       </div>
     </div>
 
-    <!-- Send email button -->
-    <div class="grid-item" style="grid-column: span 12;">
-      <button onclick="sendEmail()" class="send-email-btn">Send the email and save the spots!</button>
-    </div>
-  </div>
-
-  <script src="/static/script.js"></script>
-
-</body>
-
+    <script src="/static/script.js"></script>
+  </body>
 </html>

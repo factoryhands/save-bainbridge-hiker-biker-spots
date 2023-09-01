@@ -9,6 +9,7 @@
   <link href="style.css" rel="stylesheet" type="text/css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
 
 <body>
@@ -30,7 +31,7 @@
       <!-- Email body textarea -->
       <textarea id="email-body" class="email-body"></textarea>
 
-      <a class="generate-new-letter" href="javascript:fetchNewLetter()">Give me a new letter</a>
+      <a class="generate-new-letter" href="javascript:fetchNewLetter()"><i class="fas fa-sync"></i>Give me a new letter</a>
       
       <!-- User name input -->
       <div class="grid-item" style="grid-column: span 12;">

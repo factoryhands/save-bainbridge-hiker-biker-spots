@@ -1,6 +1,5 @@
 html, body {
   height: auto;
-  width: 100%;
   overflow-x: hidden; 
 }
 
@@ -172,5 +171,10 @@ a.generate-new-letter:hover {
   
   h2 {
     font-size: 1.5em;
+  }
+
+  button.send-email-btn {
+    font-size: 1rem;
+    color: black;
   }
 }

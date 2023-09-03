@@ -21,6 +21,26 @@ body {
   margin: 0 auto;
 }
 
+/* site nav */
+nav {
+  display: flex;
+  justify-content: flex-end;
+  text-decoration: none;
+  color: white;
+}
+
+nav a {
+  color: white;
+}
+
+nav a:hover {
+  text-decoration: none;
+}
+
+nav ul {
+  list-style: none;
+}
+
 /* bike animation */
 @keyframes bikeMotion {
   from {

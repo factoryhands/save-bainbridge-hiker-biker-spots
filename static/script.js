@@ -43,4 +43,11 @@ function fetchNewLetter() {
       document.getElementById("email-body").value = "";
       typeWriter("email-body", data.text, 0);
     });
+  let icon = document.querySelector('.fa-sync');
+  icon.classList.add('spinning');
+  // Fetching new letter code here
+  // After fetching new letter:
+  setTimeout(function(){
+    icon.classList.remove('spinning');
+  }, 2000);
 }
